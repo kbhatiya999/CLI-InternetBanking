@@ -11,6 +11,6 @@ public interface AccountDao {
 	User searchRecord(int userId) throws ClassNotFoundException,SQLException;
 	ArrayList<User> getAllRecords()throws ClassNotFoundException,SQLException;
 	boolean update(User user,int amount);
-	// - or + in ser
+	// - or + in service
 	
 }
