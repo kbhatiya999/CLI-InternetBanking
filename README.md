@@ -27,6 +27,9 @@ Tables:
         Request
 	FundTransfer
 	
+===================================================
+DAO Design:
+1. AccountDao
 
 
 
