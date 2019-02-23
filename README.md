@@ -9,7 +9,7 @@ CLi MENU1:
 4. Transaction Details
 5. Customer Information 
 ========================================================================
-CLi MENU12:business functionalities:
+CLi MENU2:business functionalities:
 1. Balance Enquiry
 2. Fund Transfer NEFT/RTGS ( to another account in the same bank) *Charges Applicatble
 3. Request for cheque book/change of address
