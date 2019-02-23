@@ -2,24 +2,19 @@
 
 Project Title: Internet banking
 
-CLi MENU:
+CLi MENU1:
 1. Create Account
 2. Update Account
 3. Change Password
 4. Transaction Details
 5. Customer Information 
-
-
-
-
-business functionalities:
--Balance Enquiry
--NEFT/RTGS (Funds Transfer to another account in the same bank) -> charges applicatble
--Request for cheque book/change of address/stop payment of cheques
-
-
-
-Tables:
+========================================================================
+CLi MENU12:business functionalities:
+1. Balance Enquiry
+2. Fund Transfer NEFT/RTGS ( to another account in the same bank) *Charges Applicatble
+3. Request for cheque book/change of address
+=========================================================================
+Database Tables:
 	Account
         Request
 	FundTransfer
