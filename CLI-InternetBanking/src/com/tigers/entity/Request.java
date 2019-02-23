@@ -8,14 +8,14 @@ public class Request {
 	private int uId;
 	private String requestType;
 	private Timestamp reqTS;
-	private String status;
+	private boolean status;
 	
 	
-	public String getStatus() {
+	public boolean getStatus() {
 		return status;
 	}
 
-	public void setStatus(String status) {
+	public void setStatus(boolean status) {
 		this.status = status;
 	}
 
