@@ -8,9 +8,17 @@ public class Request {
 	private int uId;
 	private String requestType;
 	private Timestamp reqTS;
-	//private Date reqDate;
-	//private Time reqTime;
+	private String status;
 	
+	
+	public String getStatus() {
+		return status;
+	}
+
+	public void setStatus(String status) {
+		this.status = status;
+	}
+
 	public Request() {}
 
 	public Request(int uId, String requestType, Timestamp reqTS, Date reqDate, Time reqTime) {
