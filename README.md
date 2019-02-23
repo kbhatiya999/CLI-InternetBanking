@@ -3,14 +3,11 @@
 Project Title: Internet banking
 
 CLi MENU:
--Create Account
-	-Name
-	-details
--Update Account
-	- update details
--Change Pin
--Transaction Details
--Customer Information 
+1. Create Account
+2. Update Account
+3. Change Password
+4. Transaction Details
+5. Customer Information 
 
 
 
