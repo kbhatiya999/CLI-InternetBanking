@@ -21,7 +21,7 @@ Database Tables:
 	
 ===================================================
 DAO Design:
-1. AccountDao
+1. UserDao
 
 
 
