@@ -35,7 +35,7 @@ DAO Design:
    ->insertAccount() = createAccount
     ->updateAccount() = update address/change password
     ->deleteAccount() = close account
-2. 
+2. correcting things
 
 
 
