@@ -15,9 +15,9 @@ CLi MENU2:business functionalities:
 3. Request for cheque book/change of address
 =========================================================================
 Database Tables:
-	Account
-        Request
-	FundTransfer
+	Account{AccountNo,password,timestamp,balance,address,email}
+        Request{AccountNo,RequestType,Timestramp,status}
+	FundTransfer{AccountNo,BeneficiaryAccount,amount,Timestamp}
 	
 ===================================================
 DAO Design:
