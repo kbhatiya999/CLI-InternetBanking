@@ -25,7 +25,7 @@ Database Tables:
 Pojo:
 1. User
  
-2.Transaction
+2.Transaction\n
     Account [Join] FundTransfer
     
 	
