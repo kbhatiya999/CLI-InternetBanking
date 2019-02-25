@@ -1,17 +1,17 @@
 package com.tigers.entity;
 
-public class User {
+public class Customer_details {
 	private int userId;
 	private String name;
 	private String address;
-	private String phone;
+	private int phone;
 	private String email;
 	private String password;
 	private int amount;
 	
-	public User() {}
+	public Customer_details() {}
 
-	public User(int userId, String name, String address, String phone, String email, String password, int amount) {
+	public Customer_details(int userId, String name, String address, int phone, String email, String password, int amount) {
 		super();
 		this.userId = userId;
 		this.name = name;
@@ -46,11 +46,11 @@ public class User {
 		this.address = address;
 	}
 
-	public String getPhone() {
+	public int getPhone() {
 		return phone;
 	}
 
-	public void setPhone(String phone) {
+	public void setPhone(int phone) {
 		this.phone = phone;
 	}
 

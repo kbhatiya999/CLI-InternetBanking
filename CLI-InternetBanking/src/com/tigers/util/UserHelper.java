@@ -3,13 +3,13 @@ package com.tigers.util;
 import java.util.Scanner;
 
 
-import com.tigers.entity.User;
+import com.tigers.entity.Customer_details;
 
 public class UserHelper {
 
-	public static User input(){
+	public static Customer_details input(){
 		Scanner scan=new Scanner(System.in);
-		User user=new User();
+		Customer_details user=new Customer_details();
 		System.out.println("Enter User id : ");
 		user.setuId(scan.nextInt());
 		System.out.println("Enter User Name : ");
@@ -17,7 +17,7 @@ public class UserHelper {
 		System.out.println("Enter User Address : ");
 		user.setAddress(scan.next());
 		System.out.println("Enter User Phone No. : ");
-		user.setPhone(scan.next());
+		user.setPhone(scan.nextInt());
 		System.out.println("Enter User Email : ");
 		user.setEmail(scan.next());
 		System.out.println("Enter User Password : ");
