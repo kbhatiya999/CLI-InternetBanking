@@ -26,7 +26,7 @@ Pojo:
 1. User
  
 2.Transaction
-    ->getTransactions(AccountNo)
+    Account [Join] FundTransfer
     
 	
 ===================================================
