@@ -3,13 +3,13 @@ package com.tigers.util;
 import java.util.Scanner;
 
 
-import com.tigers.entity.User;
+import com.tigers.entity.Account;
 
 public class UserHelper {
 
-	public static User input(){
+	public static Account input(){
 		Scanner scan=new Scanner(System.in);
-		User user=new User();
+		Account user=new Account();
 		System.out.println("Enter User id : ");
 		user.setuId(scan.nextInt());
 		System.out.println("Enter User Name : ");
@@ -24,6 +24,7 @@ public class UserHelper {
 		user.setPassword(scan.next());
 		System.out.println("Enter Amount : ");
 		user.setAmount(scan.nextInt());
+		scan.close();
 		return user;
 	}
 }
