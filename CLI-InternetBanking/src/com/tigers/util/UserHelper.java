@@ -24,6 +24,7 @@ public class UserHelper {
 		user.setPassword(scan.next());
 		System.out.println("Enter Amount : ");
 		user.setAmount(scan.nextInt());
+		scan.close();
 		return user;
 	}
 }
