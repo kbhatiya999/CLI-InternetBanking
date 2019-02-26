@@ -16,10 +16,53 @@ CLi MENU2:business functionalities:
 3. Request for cheque book/change of address
 =========================================================================
 Database Tables:
-	Account{AccountNo,password,timestamp,balance,address,email}
-	Admin{AccountNo,password,timestamp,balance,address,email}
-        Request{AccountNo,RequestType,Timestramp,status}
-	FundTransfer{AccountNo,BeneficiaryAccount,amount,Timestamp}
+
+
+Schema => Account{AccountNo,password,balance,address,email}
+
+CREATE TABLE account
+(
+  account_no number not null,
+  contact_name varchar2(500),
+  balance number ,
+  email varchar2(500),
+  address varchar2(500),
+  CONSTRAINT account_pk PRIMARY KEY (account_no)
+);
+
+
+Schema => Admin{AccountNo,password,balance,address,email}
+CREATE TABLE admin
+(
+  account_no number not null,
+  contact_name varchar2(500),
+  balance number ,
+  email varchar2(500),
+  address varchar2(500),
+  CONSTRAINT admin_pk PRIMARY KEY (account_no)
+);
+
+ Schema => Request{AccountNo,RequestType,req_time,status}
+ CREATE TABLE Request
+(
+  account_no numeric not null,
+  RequestType varchar2(500),
+  req_time timestamp,
+  email varchar2(500),
+  address varchar2(500),
+  CONSTRAINT admin_pk PRIMARY KEY (account_no,req_time)
+);
+ 
+Schema => FundTransfer{AccountNo,BeneficiaryAccount,amount,ttime,charges}
+CREATE TABLE fundtransfer
+(
+  account_no numeric not null,
+  account_no2 varchar2(500),
+  amount number,
+  ttime timestamp,
+  charges number,
+  CONSTRAINT fundtransfer_pk PRIMARY KEY (account_no,ttime)
+);
 	
 =========================================================================
 Pojo:
