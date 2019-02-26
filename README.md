@@ -1,6 +1,6 @@
 # CLI-InternetBanking
 
-Project Title: CLI Internet banking
+Project Title: CLI Internet banking [sql file : CLI-InternetBanking/sql]
 
 CLi MENU1:
 1. Create Account
