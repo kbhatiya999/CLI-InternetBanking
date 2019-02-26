@@ -2,15 +2,15 @@ package com.tigers.persistence;
 
 import java.sql.SQLException;
 import java.util.ArrayList;
-import com.tigers.entity.User;
+import com.tigers.entity.Account;
 
 
 public interface AccountDao {
-	boolean insertRecord(User user) throws ClassNotFoundException,SQLException;
+	boolean insertRecord(Account user) throws ClassNotFoundException,SQLException;
 	boolean deleteRecord(int userId) throws ClassNotFoundException,SQLException;
-	User searchRecord(int userId) throws ClassNotFoundException,SQLException;
-	ArrayList<User> getAllRecords()throws ClassNotFoundException,SQLException;
-	boolean update(User user,int amount);
+	Account searchRecord(int userId) throws ClassNotFoundException,SQLException;
+	ArrayList<Account> getAllRecords()throws ClassNotFoundException,SQLException;
+	boolean update(Account user,int amount);
 	// - or + in service
 	
 }

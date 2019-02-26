@@ -1,6 +1,6 @@
 package com.tigers.entity;
 
-public class User {
+public class Account {
 	private int userId;
 	private String name;
 	private String address;
@@ -9,9 +9,9 @@ public class User {
 	private String password;
 	private int amount;
 	
-	public User() {}
+	public Account() {}
 
-	public User(int userId, String name, String address, String phone, String email, String password, int amount) {
+	public Account(int userId, String name, String address, String phone, String email, String password, int amount) {
 		super();
 		this.userId = userId;
 		this.name = name;
