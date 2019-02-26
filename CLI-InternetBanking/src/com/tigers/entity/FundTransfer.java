@@ -5,66 +5,49 @@ import java.sql.Time;
 import java.sql.Timestamp;
 
 public class FundTransfer {
-	private int uIdSender;
-	private int uIdReceiver;
+	private int account_no;
+	private int account_no2;
 	private int amount;
-	private Timestamp trxTS;
-	//private Date trxDate;
-	//private Time trxTime;
-	
-	public FundTransfer() {}
-	
-	public FundTransfer(int uIdSender, int uIdReceiver, int amount, Timestamp trxTS, Date trxDate, Time trxTime) {
+	private Timestamp ttime;
+	private int charges;
+	public FundTransfer(int account_no, int account_no2, int amount, Timestamp ttime, int charges) {
 		super();
-		this.uIdSender = uIdSender;
-		this.uIdReceiver = uIdReceiver;
+		this.account_no = account_no;
+		this.account_no2 = account_no2;
 		this.amount = amount;
-		this.trxTS = trxTS;
-		
+		this.ttime = ttime;
+		this.charges = charges;
 	}
-
-	public int getuIdSender() {
-		return uIdSender;
+	public int getAccount_no() {
+		return account_no;
 	}
-
-	public void setuIdSender(int uIdSender) {
-		this.uIdSender = uIdSender;
+	public void setAccount_no(int account_no) {
+		this.account_no = account_no;
 	}
-
-	public int getuIdReceiver() {
-		return uIdReceiver;
+	public int getAccount_no2() {
+		return account_no2;
 	}
-
-	public void setuIdReceiver(int uIdReceiver) {
-		this.uIdReceiver = uIdReceiver;
+	public void setAccount_no2(int account_no2) {
+		this.account_no2 = account_no2;
 	}
-
 	public int getAmount() {
 		return amount;
 	}
-
 	public void setAmount(int amount) {
 		this.amount = amount;
 	}
-
-	public Timestamp getTrxTS() {
-		return trxTS;
+	public Timestamp getTtime() {
+		return ttime;
 	}
-
-	public void setTrxTS(Timestamp trxTS) {
-		this.trxTS = trxTS;
+	public void setTtime(Timestamp ttime) {
+		this.ttime = ttime;
 	}
-
-	
-
-
-
-	@Override
-	public String toString() {
-		return "FundTransfer [uIdSender=" + uIdSender + ", uIdReceiver=" + uIdReceiver + ", amount=" + amount
-				+ ", trxTS=" + trxTS + "]";
+	public int getCharges() {
+		return charges;
 	}
-	
+	public void setCharges(int charges) {
+		this.charges = charges;
+	}
 	
 	
 	

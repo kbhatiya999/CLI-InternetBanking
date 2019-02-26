@@ -1,87 +1,61 @@
 package com.tigers.entity;
 
 public class Account {
-	private int userId;
-	private String name;
-	private String address;
-	private String phone;
+	private int account_no;
+	private String customer_name;
+	private int balance;
 	private String email;
+	private String address;
 	private String password;
-	private int amount;
-	
-	public Account() {}
-
-	public Account(int userId, String name, String address, String phone, String email, String password, int amount) {
+	public Account(int account_no, String customer_name, int balance, String email, String address, String password) {
 		super();
-		this.userId = userId;
-		this.name = name;
-		this.address = address;
-		this.phone = phone;
+		this.account_no = account_no;
+		this.customer_name = customer_name;
+		this.balance = balance;
 		this.email = email;
-		this.password = password;
-		this.amount = amount;
-	}
-
-	public int getuId() {
-		return userId;
-	}
-
-	public void setuId(int userId) {
-		this.userId = userId;
-	}
-
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getAddress() {
-		return address;
-	}
-
-	public void setAddress(String address) {
 		this.address = address;
+		this.password = password;
 	}
-
-	public String getPhone() {
-		return phone;
+	public int getAccount_no() {
+		return account_no;
 	}
-
-	public void setPhone(String phone) {
-		this.phone = phone;
+	public void setAccount_no(int account_no) {
+		this.account_no = account_no;
 	}
-
+	public String getCustomer_name() {
+		return customer_name;
+	}
+	public void setCustomer_name(String customer_name) {
+		this.customer_name = customer_name;
+	}
+	public int getBalance() {
+		return balance;
+	}
+	public void setBalance(int balance) {
+		this.balance = balance;
+	}
 	public String getEmail() {
 		return email;
 	}
-
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
+	}
 	public String getPassword() {
 		return password;
 	}
-
 	public void setPassword(String password) {
 		this.password = password;
 	}
-
-	public int getAmount() {
-		return amount;
-	}
-
-	public void setAmount(int amount) {
-		this.amount = amount;
-	}
-
-	@Override
-	public String toString() {
-		return "User [uId=" + userId + ", name=" + name + ", address=" + address + ", phone=" + phone + ", email=" + email
-				+ /*", password=" + password +*/ ", amount=" + amount + "]";
-	}
+	
+	
+	
+	
+	
 		
 }

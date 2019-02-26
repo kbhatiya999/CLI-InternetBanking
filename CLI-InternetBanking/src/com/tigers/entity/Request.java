@@ -5,61 +5,41 @@ import java.sql.Timestamp;
 import java.sql.Date;
 
 public class Request {
-	private int uId;
+	private int account_no;
 	private String requestType;
-	private Timestamp reqTS;
-	private boolean status;
-	
-	
-	public boolean getStatus() {
-		return status;
-	}
-
-	public void setStatus(boolean status) {
+	private Timestamp req_time;
+	private char status;
+	public Request(int account_no, String requestType, Timestamp req_time, char status) {
+		super();
+		this.account_no = account_no;
+		this.requestType = requestType;
+		this.req_time = req_time;
 		this.status = status;
 	}
-
-	public Request() {}
-
-	public Request(int uId, String requestType, Timestamp reqTS, Date reqDate, Time reqTime) {
-		super();
-		this.uId = uId;
-		this.requestType = requestType;
-		this.reqTS = reqTS;
-	
+	public int getAccount_no() {
+		return account_no;
 	}
-
-	public int getuId() {
-		return uId;
+	public void setAccount_no(int account_no) {
+		this.account_no = account_no;
 	}
-
-	public void setuId(int uId) {
-		this.uId = uId;
-	}
-
 	public String getRequestType() {
 		return requestType;
 	}
-
 	public void setRequestType(String requestType) {
 		this.requestType = requestType;
 	}
-
-	public Timestamp getReqTS() {
-		return reqTS;
+	public Timestamp getReq_time() {
+		return req_time;
 	}
-
-	public void setReqTS(Timestamp reqTS) {
-		this.reqTS = reqTS;
+	public void setReq_time(Timestamp req_time) {
+		this.req_time = req_time;
 	}
-
-
-
-	@Override
-	public String toString() {
-		return "Request [uId=" + uId + ", requestType=" + requestType + ", reqTS=" + reqTS +  "]";
+	public char getStatus() {
+		return status;
 	}
-
+	public void setStatus(char status) {
+		this.status = status;
+	}
 	
 	
 	

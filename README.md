@@ -48,8 +48,7 @@ CREATE TABLE admin
   account_no numeric not null,
   RequestType varchar2(500),
   req_time timestamp,
-  email varchar2(500),
-  address varchar2(500),
+  status char(1),
   CONSTRAINT admin_pk PRIMARY KEY (account_no,req_time)
 );
  
